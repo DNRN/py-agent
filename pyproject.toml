@@ -1,0 +1,20 @@
+[project]
+name = "py-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Dennis Christensen", email = "dennis@entropyfox.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "logfire>=5.6.0",
+    "pydantic-ai>=2.68.0",
+]
+
+[project.scripts]
+py-agent = "py_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
